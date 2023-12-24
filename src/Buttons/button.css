@@ -1,0 +1,286 @@
+
+.buttonsWrapper button:not([hover]):disabled{
+  background: rgba(128, 121, 121, 0.502) ;
+  border: none ;
+  cursor: not-allowed;
+}
+.buttonsWrapper .buttonStyle-1{
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 15px;
+}
+.buttonsWrapper .buttonStyle-1:hover{
+    Background-color:rgb(240, 95, 119)
+}
+/*........................................................buttonStyle-2........................................................*/
+.buttonsWrapper .buttonStyle-2{
+          margin: 10px;
+          padding: 10px;
+          height: 50px;
+          width: 120px;
+          text-align: center;
+          text-transform: uppercase;
+          transition: 0.5s;
+          background-size: 200% auto;
+          color: white;
+          text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0 0 20px #eee;
+          border-radius: 10px;  
+          border: none;     
+}
+.buttonsWrapper .buttonStyle-2:hover {
+    background-position: right center; /* change the direction of the change here */
+  }
+  .buttonsWrapper .buttonStyle-2 {
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+    /* linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%) */
+    /* linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%) */
+    /* linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%) */
+    /* linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%) */
+  }
+/*........................................................buttonStyle-3........................................................*/
+.buttonsWrapper .buttonStyle-3{
+    color: 	black;
+    padding: 15px 50px;
+    margin: 50px;
+    border-radius: 5px;
+    border: 1px solid darkgrey;
+    font-family: Helvetica;
+    font-size: 25px;
+  }
+  .buttonsWrapper button.buttonStyle-3:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  .buttonsWrapper button.buttonStyle-3 {
+    background-color: #8ec127;
+    right: 50%;
+  }
+  .buttonsWrapper button.buttonStyle-3:hover {
+    filter: brightness(1.1);
+  }
+  /*.........................................................buttonStyle-4.............................................................*/
+  .buttonsWrapper .animate{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.buttonsWrapper .action-button{
+	padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+	border-radius: 10px;
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+	color: #FFF;
+	text-decoration: none;	
+}
+
+.buttonsWrapper .blue{
+	background-color: #3498DB;
+	border-bottom: 5px solid #2980B9;
+	text-shadow: 0px -2px #2980B9;
+  border-top:none;
+  border-left: none;
+  border-right: none;
+}
+
+
+.buttonsWrapper .action-button:active{
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+.buttonsWrapper .forActive:not([disabled]):active{
+  background-color: gray ;
+}
+  /*........................................................socialMediaCircle-1 ........................................................*/
+
+  .SMbuttonsWrapper .socialMedia-1 {
+    margin: 10px;
+    outline: none;
+    padding-right: 8px;
+    padding-left: 9px;
+    transition:  1s;
+    font-size:35px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 1s;
+  }
+  .SMbuttonsWrapper .socialMedia-1:hover{
+  cursor: pointer;
+
+}
+  
+ 
+  /*............................................................socialMediaSquare-2....................................*/
+
+  .SMbuttonsWrapper .socialMedia-2{
+    margin: 8px;
+    outline: none;
+    padding-right: 9px;
+    padding-left: 9px;
+    font-size:40px;
+    border-radius: 5px;
+  }
+  .SMbuttonsWrapper .socialMedia-2:hover{
+    cursor: pointer;   
+  }
+    
+  /*............................................................socialmediaSideBar..................................*/
+  .SMbuttonsWrapper .sideBarContainer{
+    display: flex;
+    flex-direction: column;
+    border:1px solid black;
+    outline: none;
+    border: none;
+  position: fixed;
+  margin-left:-1px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  }
+  .SMbuttonsWrapper #forIconColor{
+  margin-left: 7px;
+  }
+  .SMbuttonsWrapper .sideBar{
+    width: 50px;
+    outline: none;
+    border: 1px solid white;
+    transition: width 1s;
+    background-color:#3b5998;
+    font-size:40px;
+  }
+  .SMbuttonsWrapper .sideBar:hover{
+    cursor: pointer;
+    width: 63px;
+  }
+
+
+  /*.................................................................lighting.................................*/
+
+  /* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+/* .container{
+  border: 1px solid black;
+height:200px;
+width: max-content;
+  background-color: #050801;
+  float: right;
+} */
+
+/* .a{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #f4033b;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+    border: none;
+}
+.a:hover{
+    background-color: #f4034b;
+    color: #050801;
+    box-shadow: 0 0 5px #f4034b,
+                0 0 25px #f4034b,
+                0 0 50px #f4034b,
+                0 0 200px #f4034b;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+.a:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+.a:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+.a span{
+    position: absolute;
+    display: block;
+}
+.a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#f4034b);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#f4034b);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#f4034b);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+.a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#f4034b);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+} */
+

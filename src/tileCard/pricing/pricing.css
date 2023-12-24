@@ -1,0 +1,201 @@
+.pricingWrapper {
+    word-wrap: break-word;
+    letter-spacing: 0.9px;
+    font-style: italic;
+}
+.pricingWrapper .pricingcontainer{
+    border: 5px solid rgb(147, 144, 144);
+    width: 85%;
+    height: 100%;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.pricingWrapper .pricingCard{
+    background-color: #fff;
+    border: solid 1px #E2E2E2;
+    border-radius: 20px;
+    width: 340px;
+    /* height: 85vh; */
+    height: 640px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    position: relative;
+    margin-left: 43px;
+   transition:  0.5s;
+}
+
+
+.pricingWrapper .pricingCard:hover{
+    /* animation-name: up;
+    animation:up 0.5s forwards; */
+    -ms-transform: scale(1.04); /* IE 9 */
+    -webkit-transform: scale(1.04); /* Safari 3-8 */
+    transform: scale(1.04);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+}
+@keyframes up {
+    0%{
+        bottom:0px;
+    }
+    100%{
+         bottom:15px;
+    }
+}
+
+.pricingWrapper  .amount_month_div{
+    text-align: center;
+}
+.pricingWrapper .type{
+   text-align: center;
+}
+.pricingWrapper .tagDiv{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-image: linear-gradient(to right, #ed9411, transparent); */
+    background-image: linear-gradient(to right, #ffc300, #f06114);
+ border: 1px solid gray;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: none;
+    font-weight: 200;
+    height: 30px;
+}
+.noTag{
+    visibility: hidden;
+}
+.pricingWrapper .tag{
+    margin-top: 5px;
+}
+.pricingWrapper .logo{
+    /* width: 110px; */
+    /* position: relative;
+    margin-bottom: 20px;
+    right: 15px; */
+        /* position: relative;
+        margin-bottom: 20px;
+        width: fit-content;
+        margin: 0px; */
+        /* position: relative;
+    right: 10px; */
+}
+.pricingWrapper .image{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.pricingWrapper .type_amount_wrapper{
+    display: inline-block; 
+    margin-left:125px;
+    margin-top: 50px;
+    /* position: absolute;
+    margin-left: 127px;
+    margin-top: -131px; */
+    /* position: relative;
+    margin-left: 127px;
+    top: 60px; */
+    /* display: inline-block;
+    position: relative;
+    top: -40px; */
+}
+.pricingWrapper .logo_amount_div{
+display: flex;
+justify-content: space-evenly;
+align-items:center;
+justify-content: flex-start;
+}
+.pricingWrapper  .noLogo{
+    margin-top: 40px;
+}
+.pricingWrapper .hr{
+    height: 3px;
+    border: none;
+    background-image: linear-gradient(45deg, #ff3e28, transparent);
+}
+.pricingWrapper .headerType{
+font-weight: 600;
+    color: #811111;
+    font-size: 20px;
+}
+
+.pricingWrapper .amount{
+    color: midnightblue;
+    font-weight: 600;
+    padding-right:5px;
+}
+
+.pricingWrapper .accAmount{
+    color: gray;
+    font-size: 15px;
+    position: absolute;
+    text-decoration-color: b;
+    text-decoration-line: line-through;
+    text-decoration-color: black;
+}
+.pricingWrapper .type{
+    /* position: absolute;
+    margin-top: -24px;
+    margin-left: 74px; */
+    font-weight: 500;
+    color: darkgreen;
+}
+.pricingWrapper .offer{
+    border: 1px solid red;
+    width: fit-content;
+    padding: 3px;
+    background-image: linear-gradient(45deg, red, darkred);
+    color: white;
+    float: right;
+}
+.pricingWrapper .contentDiv{
+    /* position: relative;
+    top: 10px; */
+    height: 51%;
+    padding: 10px;
+    padding-left: 20px;
+    overflow: auto;
+    width: 89%;
+    margin-top:28px;
+}
+.pricingWrapper .button{
+    width: 88%;
+    text-align: center;
+    border: solid 2px #fff;
+    border-radius: 50px;
+    position: relative;
+    top: 31px;
+    left: 20px;
+    height: 35px;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, #4848c0, darkblue);
+    color: white;
+    font-style: italic;
+}
+.pricingWrapper .button:disabled{
+    background: rgba(128, 121, 121, 0.502) ;
+    cursor: not-allowed;
+}
+
+@media screen and (max-width:400px){
+    .pricingWrapper .pricingcontainer{
+        width: fit-content;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .pricingWrapper .pricingCard{
+        width: 300px;
+        height: 523px;
+        font-size: smaller;
+    }
+    .pricingWrapper .button{
+        width: 67%;
+        top: 20px;
+        left: 51px;
+    }
+    .pricingWrapper .contentDiv{
+height:43%;
+    }
+  }

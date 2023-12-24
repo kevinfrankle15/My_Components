@@ -1,0 +1,100 @@
+* {
+    scrollbar-width: thin;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgb(13, 13, 13);
+      border-radius: 15px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: rgb(203, 202, 203);
+    border-radius: 15px;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(214, 210, 214);
+  }
+  .parentContainer{
+      display: flex;
+  justify-content: center;}
+  .tileContainer{
+      margin-top:5%;
+      text-align: center;
+      border: 1px solid gray;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      max-height: fit-content;
+      width:80%;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content:space-evenly;
+      background: transparent;
+      perspective: 1000px;
+      
+   }
+  
+  .flipCardWrapper .ContentHalf{
+    height: 48%;
+    overflow-y: auto;
+  }
+  .flipCardWrapper .ContentFull{
+    height: 100%;
+    overflow: auto;
+  }
+  .flipCardWrapper .tileCardImage{
+      width: 100%;
+      height: 150px;
+       display: inline-block;
+  
+  }  
+  .flipCardWrapper .fullscreen{
+    width: 100%;
+    height: 100%;
+  } 
+  .flipCardWrapper .halfScreen{
+    width: 100%;
+    height: 50%; 
+  }
+  .flipCardWrapper .flip-card {
+    perspective: 1000px;
+    margin: 1px;
+      width: 250px;
+      height: 300px;
+  }  
+  .flipCardWrapper .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  
+    }
+    
+    .flipCardWrapper .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+      cursor: pointer;
+    }
+    
+    .flipCardWrapper .flip-card-view {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+    
+    .flipCardWrapper .flip-card-view:nth-child(1) {
+      background-color: rgb(255, 255, 255);
+      color: black;
+    }
+    
+    .flipCardWrapper .flip-card-view:nth-child(2) {
+      background-color: #000000;
+      color: white;
+      transform: rotateY(180deg);
+  
+    }
+  

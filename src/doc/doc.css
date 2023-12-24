@@ -1,0 +1,32 @@
+.containerDoc{
+    font-size: 20px;
+}
+.heading{
+    margin-right:18%;
+    font-size:2.6rem;
+    font-family: ui-monospace;
+}
+.sub-heading{
+    font-size: 1.4rem;
+    font-family: serif;
+    color: #837b7b;
+    margin-left: 9%;
+}
+.explanation{
+    font-size: 1.1rem;
+    color: #534a4a;
+    margin-right: 2%;
+    font-family:inherit;
+}
+.lengthyWord{
+    margin-left: 3%;
+}
+.image{
+    width: 26%;
+}
+.joinImage{
+    margin-top: -11px;
+}
+.bigImage{
+    width: 57%;
+}

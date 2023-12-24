@@ -1,0 +1,102 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+
+/* body{
+    margin:0;
+    display: flex;
+    justify-content:center;
+    min-height:100vh;
+    padding:80px;
+} */
+.fileUploadWrapper {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fileUploadWrapper #form-file-upload {
+  height: 16rem;
+  width: 28rem;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.fileUploadWrapper #input-file-upload {
+  display: none;
+}
+
+.fileUploadWrapper #label-file-upload {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 2px;
+  border-radius: 1rem;
+  border-style: dashed;
+  border-color: #cbd5e1;
+  background-color: #f8fafc;
+}
+
+.MessageContainer{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.resetBtn{
+  display: flex;
+  justify-content: center;
+}
+
+/*........................................................*/
+.fileUploadWrapper .drag{
+  margin:0px;
+  font-size: 1rem;
+}
+
+.fileUploadWrapper #drag-file-element {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.fileUploadWrapper #label-file-upload.unActive{
+  background-color: #f8fafc;
+}
+.fileUploadWrapper .fileInputs{
+    position: relative;
+    margin-bottom: 1.5em;
+}
+.fileUploadWrapper .input{
+    position: relative;
+    max-width: 200px;
+} 
+
+.fileUploadWrapper .table {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .fileUploadWrapper .table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .fileUploadWrapper .table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .fileUploadWrapper .table tr:hover {background-color: #ddd;}
+  
+  .fileUploadWrapper .table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #21d69aab;
+    color: white;
+  }
